@@ -196,7 +196,7 @@ if __name__ == '__main__':
                         help='the knowledge base directory')
     parser.add_argument("--seed", default=42, type=int)
 
-    parser.add_argument('--B', type=int, default=2,
+    parser.add_argument('--B', type=int, default=1,
                         help='the batch size per gpu')
 
     parser.add_argument("--dev_cand", default=6, type=int)
@@ -208,7 +208,7 @@ if __name__ == '__main__':
                         help='the batch size')
     parser.add_argument('--entity_bsz', type=int, default=128,
                         help='the batch size')
-    parser.add_argument('--use_gpu_index', default=True,
+    parser.add_argument('--use_gpu_index', default=False,
                         help='use gpu index?')
 
     args = parser.parse_args()

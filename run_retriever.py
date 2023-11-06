@@ -437,7 +437,7 @@ if __name__ == '__main__':
                         help='the batch size')
     parser.add_argument('--entity_bsz', type=int, default=128,
                         help='the batch size')
-    parser.add_argument('--use_gpu_index', default=True,
+    parser.add_argument('--use_gpu_index', default=False,
                         help='use gpu index?')
     parser.add_argument("--update_can_embedding",default=True,type=bool)
     parser.add_argument('--cands_embeds_path', type=str,
